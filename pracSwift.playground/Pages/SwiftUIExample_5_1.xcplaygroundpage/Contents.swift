@@ -37,4 +37,36 @@ var multiline = """
 """
 
 print(multiline)
+
+print("kuks")
+print("\t kuks")
+print("\\")
+
+/**
+ \u{nn}: 한 바이트 유니코드 스칼라. 16진수 2개
+ \u{nnnn}: 두 바이트 유니코드 스칼라. 16진수 4개
+ \u{nnnnnnnn}: 네 바이트 유니코드 스칼라. 16진수 8개
+ */
+
+// 상수와 변수
+// 상수
+let maxUserCount = 20
+
+// 변수
+var backslash = "\\"
+
+var userCount: Int = 10
+var signalStrength = 2.231
+let companyName = "My Company"
+
+print(signalStrength)
+
+let bookTitle1 = "SwiftUI Essentials"
+print(bookTitle1)
+
+let bookTitle2: String
+bookTitle2 = "Kuks Chk"
+
+print(bookTitle2)
+
 //: [Next](@next)
