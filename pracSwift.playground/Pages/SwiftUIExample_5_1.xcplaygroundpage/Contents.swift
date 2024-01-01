@@ -69,4 +69,129 @@ bookTitle2 = "Kuks Chk"
 
 print(bookTitle2)
 
+// 튜플
+let myTuple = (10, 432.433, "This is a String")
+print (myTuple)
+print (myTuple.0)
+print (myTuple.1)
+print (myTuple.2)
+
+print("==========================")
+
+// 튜플 생성 시점에서 각각의 값을 변수에 할당
+let kuksTuple = (count: 10, length: 432.433, message: "This is a String.")
+
+print(kuksTuple)
+
+print(kuksTuple.count)
+print(kuksTuple.length)
+print(kuksTuple.message)
+
+var index: Int?
+
+if index != nil{
+    print("yun")
+} else {
+    print("kuks")
+}
+
+index = 3
+
+var treeArray=["Oak", "Pine", "Yew", "Birch"]
+
+if index != nil{
+    print(treeArray[index!]) // ! 안 붙이면 에러남
+} else {
+    print("index does not contain a value")
+}
+
+/*
+ 강제 언래핑 대신, 옵셔널로 할당된 값은 옵셔널 바인딩을 이용하여 임시 변수나 상수에 할당할 수 있으며, 구문은 아래와 같다.
+*/
+
+/*
+if let constantname = optionalName{
+    
+}
+
+if var variablename = optionalName{
+    
+}
+*/
+
+if let kuksVal = index {
+    print(treeArray[kuksVal])
+} else {
+    print("index does not contain a value.")
+}
+
+if let index = index {
+    print(treeArray[index])
+} else {
+    print("index does not contain a value.")
+}
+
+// if - let 구문
+var pet1: String?
+var pet2: String?
+
+pet1 = "dog"
+pet2 = "cat"
+
+if let pet1, let pet2 {
+    print(pet1)
+    print(pet2)
+} else {
+    print("No pet.")
+}
+print("------------------------")
+let petCount = 2
+
+if let pet1, let pet2, petCount > 1 {
+    print(pet1)
+    print(pet2)
+} else {
+    print("No pet.")
+}
+
+var idx: Int! // 암묵적 언래핑 되도록 옵셔널 선언
+
+idx = 3
+
+var kuksTreeArray = ["kim", "yun", "kuk", "pomi"]
+
+if idx != nil {
+    print(kuksTreeArray[idx])
+} else {
+    print("idx does not contain a value")
+}
+
+// error 발생1
+/*
+let myVal - record.object(forKey: "comment") as! String
+
+let myButton: UIButton = UIButton()
+
+let myControl = myButton as UIControl
+*/
+
+// error 발생2
+/*
+let myScrollView: UIScrollView = UIScrollView()
+
+let myTextView = myScrollView as! UITextView
+*/
+
+//if let myTextView = myScrollView as? UITextView {
+//    print("Type cast to UITextView succeeded")
+//} else {
+//    print("Type cast to UITextView failed")
+//}
+
+/*
+if myobject is MyClass {
+ myobject가 MyClass의 인스턴스면 실행
+}
+*/
+
 //: [Next](@next)
